@@ -1,0 +1,103 @@
+/* styles/MainProfile.module.css */
+.aboutSection {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  flex-direction: row;
+}
+
+.profileImgContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-inline: 4rem;
+  margin-left: 15px;
+}
+
+.aboutContent h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.aboutContent p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .profileImgContainer, .aboutContent {
+    height: 25rem;
+    padding: 0rem 2rem 5rem 2rem;
+  }
+
+  .profileImg {
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .aboutContent {
+    padding-inline: 2rem;
+    align-items: center;
+  }
+
+  .aboutContent h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .aboutContent p {
+    text-align: center;
+    margin: 1rem 2rem 0 2rem;
+    font-size: 1rem;
+  }
+
+  .aboutButton {
+    margin-top: 2rem;
+    width: 8rem;
+  }
+
+}

@@ -1,0 +1,75 @@
+/* styles/NavBar.module.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  z-index: 1000;
+}
+
+.logo {
+  margin-left: 4%;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4.5%;
+}
+
+.menuItem {
+  margin: 0 15px;
+  font-size: 16px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.pageContent {
+  padding-top: 120px;
+}
+
+.menuBurger {
+  display: none;
+}
+
+/* 미디어 쿼리: 화면 너비가 768px 이하일 때 적용 */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .logoText {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
+  .menuItem {
+    font-size: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+}
